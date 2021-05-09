@@ -1,0 +1,262 @@
+/* sizing (width) */
+
+nav,
+header img,
+article,
+.center,
+.fullwidth {
+    max-width: 1250px;
+    min-width: 800px;
+    width: 60vw;
+}
+
+.pack {
+    max-width: 625px;
+    min-width: 400px;
+    width: 30vw;
+}
+
+
+/* general */
+
+.center {
+    align-items: center;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Serif', serif;
+}
+
+body {
+    background: #ffffff;
+    object-fit: cover;
+    background-image: url("../img/bg.png");
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+}
+
+
+/* header */
+
+header {
+    margin-top: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+nav {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header nav ul {
+    justify-content: space-around;
+    /* background-color: pink;
+    border-radius: 10px;
+    padding: 6px;
+    border: outset rgb(255, 255, 255, 0.6) 2.5px; */
+}
+
+header nav li {
+    border-radius: 10px;
+    list-style: none;
+    background-color: rgb(255, 224, 234);
+    display: inline-block;
+    padding: 7.5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.5em;
+    margin-left: 2.5px;
+    margin-right: 2.5px;
+    text-transform: uppercase;
+    /* width and color */
+    border: solid 1px rgb(92, 20, 44);
+    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
+}
+
+header nav ul li:hover {
+    transition: ease 0.2s;
+    background-color: rgb(255, 206, 222);
+}
+
+header img {
+    max-height: 200px;
+    object-fit: cover;
+}
+
+
+/* article */
+
+article a {
+    color: rgb(184, 95, 125);
+}
+
+article a:visited,
+article a:focus {
+    color: rgb(92, 20, 44);
+}
+
+article {
+    margin-top: 35px;
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+    border-radius: 15px;
+    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.1);
+}
+
+article h1 {
+    font-weight: normal;
+    font-size: 2.1em;
+    display: inline-block;
+    margin-top: 12.5px;
+}
+
+.flower {
+    margin-right: 2.5px;
+    width: 30px;
+    display: inline-block;
+    height: 30px;
+    background-image: url("../img/cherryblossom.png");
+}
+
+h2 {
+    margin-top: 12.5px;
+    font-weight: normal;
+}
+
+article>p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    margin-top: 12.5px;
+    margin-bottom: 12.5px;
+}
+
+.underline {
+    height: 1px;
+    width: 100%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    margin-bottom: 15px;
+    border-radius: 20%;
+}
+
+.smallunderline {
+    height: 1px;
+    width: 25%;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
+    margin-bottom: 15px;
+    border-radius: 20%;
+}
+
+.divider {
+    content: "";
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 90%;
+    height: 1px;
+    background-image: linear-gradient(to right, transparent, rgb(48, 49, 51), transparent);
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 1px;
+}
+
+.fullwidth {
+    margin-bottom: 12.5px;
+}
+
+
+/* footer */
+
+footer {
+    height: 35px;
+}
+
+
+/* pack and songs */
+
+em {
+    color: rgb(182, 53, 165);
+    font-weight: 600;
+    font-style: normal;
+}
+
+.pack {
+    align-items: center;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-top: 22.5px;
+    padding-bottom: 22.5px;
+    display: inline-block;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.pack a {
+    border-bottom: rgb(184, 95, 125) dashed 1px;
+    font-size: 1.1em;
+}
+
+.pack a:visited,
+.pack a:focus {
+    border-bottom: rgb(92, 20, 44) dashed 1px;
+}
+
+.pack p {
+    font-size: 1em;
+}
+
+.packs {
+    align-items: center;
+    text-align: center;
+}
+
+.packimg {
+    width: 350px;
+    box-shadow: 2.5px 2.5px 2.5px rgba(0, 0, 0, 0.4);
+    border-radius: 7.5px;
+}
+
+h3 {
+    font-weight: normal;
+    font-size: 1.5em;
+    font-style: italic;
+}
+
+table {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: rgb(255, 219, 241);
+    border-radius: 5px;
+}
+
+td {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 2.5px;
+    padding-left: 4px;
+    padding-right: 4px;
+    border: 1px rgb(255, 188, 229) solid;
+    display: none;
+}
+
+th {
+    min-width: 350px;
+}
